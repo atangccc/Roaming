@@ -1,0 +1,9 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: plugin-theme-roaming-settings
+spec:
+  # Configuration is managed by the dedicated console page. Keeping an empty
+  # Setting preserves Halo's ConfigMap lifecycle without creating a duplicate
+  # settings tab beside the plugin detail tab.
+  forms: []

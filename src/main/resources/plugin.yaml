@@ -1,0 +1,22 @@
+apiVersion: plugin.halo.run/v1alpha1
+kind: Plugin
+metadata:
+  name: plugin-theme-roaming
+spec:
+  enabled: true
+  requires: ">=2.25.0"
+  version: "${pluginVersion}"
+  author:
+    name: Serenity
+    website: https://www.aobp.cn/
+  logo: /static/logo-rainbow.svg
+  homepage: https://www.aobp.cn/
+  repo: https://github.com/atangccc/Roaming
+  issues: https://github.com/atangccc/Roaming/issues
+  displayName: "主题漫游"
+  description: "告别一个站只能穿一套衣服的烦恼，多款主题随手切换、各有舞台；今天宠这个，明天宠那个，让每个主题都能雨露均沾。"
+  configMapName: plugin-theme-roaming-configmap
+  settingName: plugin-theme-roaming-settings
+  license:
+    - name: GPL-3.0
+      url: https://opensource.org/licenses/GPL-3.0

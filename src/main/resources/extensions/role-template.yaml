@@ -1,0 +1,34 @@
+apiVersion: v1alpha1
+kind: Role
+metadata:
+  name: theme-roaming-public-access
+  labels:
+    halo.run/role-template: "true"
+    halo.run/hidden: "true"
+    rbac.authorization.halo.run/aggregate-to-anonymous: "true"
+rules:
+  - apiGroups: ["api.theme-roaming.halo.run"]
+    resources: ["catalog"]
+    verbs: ["get", "list"]
+---
+apiVersion: v1alpha1
+kind: Role
+metadata:
+  name: theme-roaming-console-manage
+  labels:
+    halo.run/role-template: "true"
+    halo.run/hidden: "true"
+    rbac.authorization.halo.run/aggregate-to-admin: "true"
+  annotations:
+    rbac.authorization.halo.run/module: "主题漫游"
+    rbac.authorization.halo.run/display-name: "主题漫游管理"
+    rbac.authorization.halo.run/ui-permissions: |
+      ["plugin:theme-roaming:manage"]
+rules:
+  - apiGroups: ["api.console.halo.run"]
+    resources: ["plugins/json-config"]
+    resourceNames: ["plugin-theme-roaming"]
+    verbs: ["get", "update"]
+  - apiGroups: ["theme.halo.run", ""]
+    resources: ["themes", "menus"]
+    verbs: ["get", "list"]

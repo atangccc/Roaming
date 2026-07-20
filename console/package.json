@@ -1,0 +1,22 @@
+{
+  "name": "@serenity/plugin-theme-roaming",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild build --env-mode development --watch",
+    "build": "rsbuild build"
+  },
+  "dependencies": {
+    "@halo-dev/api-client": "^2.25.0",
+    "@halo-dev/components": "^2.25.0",
+    "@halo-dev/ui-shared": "^2.25.0",
+    "vue": "^3.5.24"
+  },
+  "devDependencies": {
+    "@halo-dev/ui-plugin-bundler-kit": "^2.25.0",
+    "@rsbuild/core": "^2.1.6",
+    "@rsbuild/plugin-vue": "^2.0.1",
+    "typescript": "~5.9.3"
+  },
+  "packageManager": "pnpm@10.22.0"
+}

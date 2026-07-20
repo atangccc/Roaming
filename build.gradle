@@ -1,0 +1,75 @@
+plugins {
+    id "com.github.node-gradle.node" version "7.1.0"
+    id "run.halo.plugin.devtools" version "0.6.2"
+    id "io.freefair.lombok" version "8.13"
+    id "java"
+}
+
+group = "run.halo.roaming"
+version = project.findProperty("pluginVersion") ?: "0.0.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform("run.halo.tools.platform:plugin:2.25.0")
+    compileOnly "run.halo.app:api"
+
+    testImplementation "run.halo.app:api"
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "io.projectreactor:reactor-test"
+    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 21
+    options.compilerArgs << "-parameters"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+processResources {
+    filesMatching("plugin.yaml") {
+        expand(pluginVersion: project.version)
+    }
+}
+
+node {
+    nodeProjectDir = file("${project.projectDir}/console")
+}
+
+tasks.register("installDepsForUI", PnpmTask) {
+    args = ["install", "--frozen-lockfile=false"]
+}
+
+tasks.register("buildFrontend", PnpmTask) {
+    args = ["build"]
+    dependsOn("installDepsForUI")
+}
+
+build {
+    tasks.named("compileJava").configure {
+        dependsOn("buildFrontend")
+    }
+}
+
+halo {
+    version = "2.25.4"
+    superAdminUsername = "admin"
+    superAdminPassword = "admin"
+    def developmentPort = providers.gradleProperty("haloPort")
+        .map(Integer.&parseInt)
+        .getOrElse(8090)
+    externalUrl = "http://localhost:${developmentPort}"
+    port = developmentPort
+}

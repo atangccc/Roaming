@@ -1,0 +1,5 @@
+.gradle/
+build/
+console/node_modules/
+src/main/resources/ui/
+workplace/

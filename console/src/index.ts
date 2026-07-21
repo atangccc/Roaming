@@ -5,15 +5,19 @@ const RoamingIcon = {
   __v_skip: true,
   name: "ThemeRoamingIcon",
   render: () => h("svg", {
-    viewBox: "0 0 1024 1024",
+    viewBox: "0 0 24 24",
     width: "1.2em",
     height: "1.2em",
-    fill: "currentColor",
+    fill: "none",
+    stroke: "currentColor",
+    "stroke-width": "1.55",
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
     "aria-hidden": "true",
   }, [
-    h("path", {
-      d: "M305.066667 585.130667h-34.389334L343.893333 512l73.216 73.130667h-31.744a146.432 146.432 0 0 0 253.44 0h80.213334a219.477333 219.477333 0 0 1-413.866667 0z m413.866666-146.261334h32.170667L677.888 512l-73.130667-73.130667h34.048a146.432 146.432 0 0 0-253.525333 0h-80.213333a219.477333 219.477333 0 0 1 413.866666 0z",
-    }),
+    h("path", { d: "M5 14.5V6.8A2.8 2.8 0 0 1 7.8 4h7.7" }),
+    h("rect", { x: "8", y: "7", width: "11", height: "10", rx: "2.5" }),
+    h("path", { d: "M10.8 10.5h5.4l-1.5-1.4M16.2 13.5h-5.4l1.5 1.4" }),
   ]),
 };
 

@@ -1,49 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="主题漫游">
-  <defs>
-    <linearGradient id="background" x1="112" y1="96" x2="916" y2="936" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8179e9"/>
-      <stop offset=".42" stop-color="#b77fd1"/>
-      <stop offset=".72" stop-color="#e993b8"/>
-      <stop offset="1" stop-color="#68bdca"/>
-    </linearGradient>
-    <linearGradient id="edge" x1="78" y1="68" x2="946" y2="960" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#554eae"/>
-      <stop offset=".48" stop-color="#8d579f"/>
-      <stop offset="1" stop-color="#357f90"/>
-    </linearGradient>
-    <linearGradient id="glass" x1="300" y1="310" x2="738" y2="730" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#f9f8ff" stop-opacity=".9"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="376" y1="448" x2="676" y2="590" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8d7ce9"/>
-      <stop offset=".52" stop-color="#d57fab"/>
-      <stop offset="1" stop-color="#58aebd"/>
-    </linearGradient>
-    <filter id="logo-shadow" x="-18%" y="-18%" width="136%" height="150%">
-      <feDropShadow dx="0" dy="26" stdDeviation="28" flood-color="#4c456c" flood-opacity=".25"/>
-    </filter>
-    <filter id="card-shadow" x="-22%" y="-24%" width="144%" height="156%">
-      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#554d75" flood-opacity=".22"/>
-    </filter>
-  </defs>
+  <rect x="64" y="64" width="896" height="896" rx="224" fill="#f3f5f5" stroke="#292d30" stroke-width="20"/>
+  <rect x="216" y="244" width="512" height="392" rx="88" fill="#dce5e7" stroke="#292d30" stroke-width="18" transform="rotate(-6 472 440)"/>
+  <rect x="294" y="326" width="512" height="392" rx="88" fill="#ffffff" stroke="#292d30" stroke-width="18"/>
 
-  <rect x="64" y="64" width="896" height="896" rx="236" fill="url(#background)" stroke="url(#edge)" stroke-width="24" filter="url(#logo-shadow)"/>
-  <rect x="88" y="88" width="848" height="848" rx="212" fill="none" stroke="#fff" stroke-opacity=".34" stroke-width="8"/>
-  <path d="M118 314C238 133 433 90 619 104c137 10 246 55 317 128v184C784 316 621 260 445 261c-124 1-234 20-327 53Z" fill="#fff" fill-opacity=".1"/>
+  <circle cx="390" cy="420" r="23" fill="#e87870" stroke="#292d30" stroke-width="10"/>
+  <circle cx="456" cy="420" r="23" fill="#e4b758" stroke="#292d30" stroke-width="10"/>
+  <circle cx="522" cy="420" r="23" fill="#62aa9d" stroke="#292d30" stroke-width="10"/>
 
-  <g filter="url(#card-shadow)">
-    <rect x="230" y="268" width="504" height="382" rx="92" fill="#fff" fill-opacity=".28" stroke="#fff" stroke-opacity=".4" stroke-width="8" transform="rotate(-7 482 459)"/>
-    <rect x="286" y="326" width="504" height="382" rx="92" fill="url(#glass)"/>
-  </g>
-
-  <circle cx="380" cy="418" r="24" fill="#e88fb7"/>
-  <circle cx="444" cy="418" r="24" fill="#8d82df"/>
-  <circle cx="508" cy="418" r="24" fill="#60b7c4"/>
-  <rect x="370" y="478" width="330" height="22" rx="11" fill="#706c82" fill-opacity=".18"/>
-  <rect x="370" y="526" width="236" height="22" rx="11" fill="#706c82" fill-opacity=".12"/>
-
-  <path d="M318 720c76 62 181 91 286 69 70-15 131-48 180-96l-4 60 42-1 8-137-137 8 3 42 57-3c-40 37-90 62-147 74-87 18-174-5-238-56Z" fill="#fff" fill-opacity=".92"/>
-  <path d="M706 270c-76-62-181-91-286-69-70 15-131 48-180 96l4-60-42 1-8 137 137-8-3-42-57 3c40-37 90-62 147-74 87-18 174 5 238 56Z" fill="#fff" fill-opacity=".92"/>
-  <path d="M398 600h228" stroke="url(#accent)" stroke-width="18" stroke-linecap="round"/>
+  <path d="M392 522h302l-54-50m54 50-54 50" fill="none" stroke="#292d30" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M708 622H406l54 50m-54-50 54-50" fill="none" stroke="#292d30" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="362" y="758" width="182" height="18" rx="9" fill="#292d30"/>
+  <circle cx="582" cy="767" r="10" fill="#e87870"/>
+  <circle cx="618" cy="767" r="10" fill="#e4b758"/>
+  <circle cx="654" cy="767" r="10" fill="#62aa9d"/>
 </svg>

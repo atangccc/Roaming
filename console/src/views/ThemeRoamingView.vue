@@ -475,7 +475,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 /* Soft spectrum identity, kept subtle so content and controls stay readable. */
 .tr-shell{background:radial-gradient(circle at 10% 4%,rgba(255,210,229,.25),transparent 30%),radial-gradient(circle at 88% 8%,rgba(190,225,255,.28),transparent 31%),radial-gradient(circle at 76% 94%,rgba(213,243,224,.22),transparent 28%),#f7f8fa}
 .tr-frame{border-color:rgba(184,190,201,.55);background:rgba(255,255,255,.72)}
-.tr-brand-mark{background:linear-gradient(145deg,#ffd9e8 3%,#e7ddff 35%,#d6efff 67%,#dff6e5);color:#4c4b59;box-shadow:0 7px 18px rgba(113,103,145,.16),inset 0 1px rgba(255,255,255,.9)}
+.tr-brand-mark{border:2px solid rgba(87,82,105,.48);background:linear-gradient(145deg,#ffd9e8 3%,#e7ddff 35%,#d6efff 67%,#dff6e5);color:#4c4b59;box-shadow:0 7px 18px rgba(113,103,145,.16),inset 0 0 0 3px rgba(255,255,255,.72)}
 .tr-float-nav button.active{background:linear-gradient(145deg,#f8dfea,#e5e1fb 48%,#dbeef8);color:#4c4b59;box-shadow:0 5px 14px rgba(105,99,137,.14)}
 .tr-nav-badge{background:#777487}
 .tr-toggle input:checked+i{background:linear-gradient(90deg,#df9fba,#aaa4df,#8bbfd3)}

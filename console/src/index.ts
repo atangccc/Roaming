@@ -10,14 +10,14 @@ const RoamingIcon = {
     height: "1.2em",
     fill: "none",
     stroke: "currentColor",
-    "stroke-width": "1.7",
+    "stroke-width": "1.6",
     "stroke-linecap": "round",
     "stroke-linejoin": "round",
   }, [
-    h("path", { d: "M12 3a9 9 0 1 0 0 18h1.2a1.8 1.8 0 1 0 0-3.6h-.6a1.5 1.5 0 0 1 0-3h2A6.8 6.8 0 0 0 14.6 3H12Z" }),
-    h("circle", { cx: "7.6", cy: "10.4", r: ".8", fill: "currentColor", stroke: "none" }),
-    h("circle", { cx: "10", cy: "6.8", r: ".8", fill: "currentColor", stroke: "none" }),
-    h("circle", { cx: "14.4", cy: "6.8", r: ".8", fill: "currentColor", stroke: "none" }),
+    h("circle", { cx: "12", cy: "12", r: "10" }),
+    h("path", { d: "M6.8 8.3h10.4M6.8 15.7h10.4" }),
+    h("circle", { cx: "15.2", cy: "8.3", r: "1.45", fill: "currentColor", stroke: "none" }),
+    h("circle", { cx: "8.8", cy: "15.7", r: "1.45", fill: "currentColor", stroke: "none" }),
   ]),
 };
 

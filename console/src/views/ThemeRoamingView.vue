@@ -59,7 +59,7 @@ const sortedMenus = computed(() => [...menus.value].sort((a, b) =>
   menuLabel(a).localeCompare(menuLabel(b), "zh-CN")));
 const openCount = computed(() => form.bindings.filter((item) => item.enabled).length);
 const pageContext = computed(() => ({
-  bindings: { title: "主题绑定", description: "每个开放主题选择一个对应菜单" },
+  bindings: { title: "主题绑定", description: "" },
   experience: { title: "漫游配置", description: "配置主题切换入口与访客体验" },
 })[activeView.value]);
 const menuOptions = computed<SelectOption[]>(() => sortedMenus.value.map((menu) => ({ label: `${menuLabel(menu)} · ${menuCount(menu.metadata.name)} 项`, value: menu.metadata.name })));
@@ -293,7 +293,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 
         <div class="tr-page-context">
           <strong>{{ pageContext.title }}</strong>
-          <span>{{ pageContext.description }}</span>
+          <span v-if="pageContext.description">{{ pageContext.description }}</span>
         </div>
 
         <div class="tr-actions">
@@ -477,7 +477,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 .tr-frame{border-color:#cfd3d4;background:#f7f8f7;box-shadow:none;backdrop-filter:none}
 .tr-corner-tl,.tr-corner-tr,.tr-corner-bl,.tr-corner-br{border-color:#292d30}
 .tr-topbar{border-color:#d3d6d6;background:#fff;box-shadow:none}
-.tr-brand-mark{border:0;background:transparent;color:#292d30;box-shadow:none}
+.tr-brand-mark{width:42px;height:42px;flex:none;border:0;background:transparent;color:#292d30;box-shadow:none}
 .tr-brand strong,.tr-brand strong span{color:#292d30}
 .tr-page-context strong{color:#292d30}.tr-page-context span{color:#737a7d}
 .tr-open-count{border:1px solid #d8dbdc;background:#f3f4f4;color:#555c60}
@@ -516,7 +516,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 
 /* Respond to the actual plugin canvas, including the space occupied by Halo's sidebar. */
 .tr-frame{container-name:roaming-frame;container-type:inline-size}
-.tr-brand-mark svg{width:24px;height:24px;fill:none;stroke:none}
+.tr-brand-mark svg{width:32px;height:32px;fill:none;stroke:none}
 @container roaming-frame (max-width:1100px){
   .tr-binding-row{grid-template-columns:minmax(0,.9fr) minmax(0,1.15fr);gap:18px}
   .tr-binding-theme{grid-template-columns:132px minmax(0,1fr);gap:14px}

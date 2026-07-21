@@ -14,7 +14,7 @@ const RoamingIcon = {
     "stroke-linecap": "round",
     "stroke-linejoin": "round",
   }, [
-    h("circle", { cx: "12", cy: "12", r: "10" }),
+    h("rect", { x: "2", y: "2", width: "20", height: "20", rx: "6" }),
     h("path", { d: "M6.8 8.3h10.4M6.8 15.7h10.4" }),
     h("circle", { cx: "15.2", cy: "8.3", r: "1.45", fill: "currentColor", stroke: "none" }),
     h("circle", { cx: "8.8", cy: "15.7", r: "1.45", fill: "currentColor", stroke: "none" }),

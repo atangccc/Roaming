@@ -30,9 +30,9 @@
       <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#8077a0" flood-opacity=".18"/>
     </filter>
   </defs>
-  <circle cx="512" cy="512" r="456" fill="url(#surface)" stroke="url(#outline)" stroke-width="24" filter="url(#shadow)"/>
-  <circle cx="512" cy="512" r="432" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="12"/>
-  <circle cx="512" cy="512" r="414" fill="none" stroke="url(#outline)" stroke-opacity=".22" stroke-width="5"/>
+  <rect x="56" y="56" width="912" height="912" rx="220" fill="url(#surface)" stroke="url(#outline)" stroke-width="24" filter="url(#shadow)"/>
+  <rect x="80" y="80" width="864" height="864" rx="198" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="12"/>
+  <rect x="98" y="98" width="828" height="828" rx="180" fill="none" stroke="url(#outline)" stroke-opacity=".22" stroke-width="5"/>
   <path d="M781.141 447.829H242.859a204.8 204.8 0 0 1 0-409.6h538.282a204.8 204.8 0 0 1 0 409.6zM242.859 89.429a153.6 153.6 0 0 0 0 307.2h538.282a153.6 153.6 0 0 0 0-307.2z" fill="url(#line)" stroke="#554d67" stroke-opacity=".2" stroke-width="7" stroke-linejoin="round"/>
   <path d="M475.989 232.277H178.517a99.157 99.157 0 0 0 0 198.315h297.472a99.157 99.157 0 1 0 0-198.315z" fill="url(#upper)" opacity=".48"/>
   <path d="M824.149 769.024H526.677a99.157 99.157 0 1 0 0 198.315h297.472a99.157 99.157 0 1 0 0-198.315z" fill="url(#lower)" opacity=".48"/>

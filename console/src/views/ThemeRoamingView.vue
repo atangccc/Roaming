@@ -451,7 +451,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 .tr-frame{border-color:#e2e4e7;background:rgba(255,255,255,.8);box-shadow:0 18px 48px rgba(19,22,26,.06)}
 .tr-corner-tl,.tr-corner-tr,.tr-corner-bl,.tr-corner-br{border-color:#cdd1d5}
 .tr-topbar{gap:14px;border-color:#e2e4e7;background:rgba(255,255,255,.92);box-shadow:0 5px 18px rgba(20,23,27,.05)}
-.tr-brand-mark{width:36px;height:36px;border-radius:50%;background:#26292d;color:#fff;box-shadow:0 5px 13px rgba(19,22,26,.16)}
+.tr-brand-mark{width:36px;height:36px;border-radius:11px;background:#26292d;color:#fff;box-shadow:0 5px 13px rgba(19,22,26,.16)}
 .tr-brand-mark svg{width:23px;stroke-width:1.55}
 .tr-brand strong,.tr-brand strong span{color:#292c30}
 .tr-page-context{margin-left:4px;padding-left:0;border-left:0}

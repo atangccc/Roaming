@@ -9,7 +9,7 @@ spec:
   author:
     name: Serenity
     website: https://www.aobp.cn/
-  logo: /static/logo-rainbow.svg
+  logo: /static/logo.svg
   homepage: https://www.aobp.cn/
   repo: https://github.com/atangccc/Roaming
   issues: https://github.com/atangccc/Roaming/issues

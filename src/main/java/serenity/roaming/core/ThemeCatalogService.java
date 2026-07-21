@@ -1,4 +1,4 @@
-package run.halo.roaming.core;
+package serenity.roaming.core;
 
 import java.util.Comparator;
 import java.util.List;
@@ -11,10 +11,10 @@ import reactor.core.publisher.Mono;
 import run.halo.app.core.extension.Theme;
 import run.halo.app.extension.ListOptions;
 import run.halo.app.extension.ReactiveExtensionClient;
-import run.halo.roaming.infra.PluginJson;
-import run.halo.roaming.config.ThemeRoamingSettings;
-import run.halo.roaming.config.ThemeRoamingSettings.ThemeBinding;
-import run.halo.roaming.config.ThemeRoamingSettingsService;
+import serenity.roaming.infra.PluginJson;
+import serenity.roaming.config.ThemeRoamingSettings;
+import serenity.roaming.config.ThemeRoamingSettings.ThemeBinding;
+import serenity.roaming.config.ThemeRoamingSettingsService;
 
 @Service
 @RequiredArgsConstructor

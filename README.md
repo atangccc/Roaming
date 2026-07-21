@@ -42,7 +42,7 @@ window.ThemeRoaming?.open();
 开放主题目录：
 
 ```text
-GET /apis/api.theme-roaming.halo.run/v1alpha1/catalog
+GET /apis/roaming.serenity/v1alpha1/catalog
 ```
 
 Thymeleaf 可通过 `themeRoamingFinder.getCatalog()` 获取当前主题和开放主题列表。

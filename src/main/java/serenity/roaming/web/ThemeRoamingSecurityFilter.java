@@ -1,4 +1,4 @@
-package run.halo.roaming.web;
+package serenity.roaming.web;
 
 import java.net.URI;
 import java.time.Duration;
@@ -15,14 +15,14 @@ import org.springframework.web.server.ServerWebExchange;
 import org.springframework.web.server.WebFilterChain;
 import reactor.core.publisher.Mono;
 import run.halo.app.security.AfterSecurityWebFilter;
-import run.halo.roaming.config.ThemeRoamingSettings;
-import run.halo.roaming.config.ThemeRoamingSettings.Audience;
-import run.halo.roaming.config.ThemeRoamingSettings.ThemeBinding;
-import run.halo.roaming.config.ThemeRoamingSettingsService;
-import run.halo.roaming.core.SystemThemeStateService;
-import run.halo.roaming.core.ThemeCatalogService;
-import run.halo.roaming.core.HaloThemeContextBridge;
-import run.halo.roaming.core.ThemeRoamingRequestContext;
+import serenity.roaming.config.ThemeRoamingSettings;
+import serenity.roaming.config.ThemeRoamingSettings.Audience;
+import serenity.roaming.config.ThemeRoamingSettings.ThemeBinding;
+import serenity.roaming.config.ThemeRoamingSettingsService;
+import serenity.roaming.core.SystemThemeStateService;
+import serenity.roaming.core.ThemeCatalogService;
+import serenity.roaming.core.HaloThemeContextBridge;
+import serenity.roaming.core.ThemeRoamingRequestContext;
 
 @Slf4j
 @Component

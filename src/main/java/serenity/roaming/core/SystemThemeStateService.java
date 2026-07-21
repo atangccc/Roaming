@@ -1,4 +1,4 @@
-package run.halo.roaming.core;
+package serenity.roaming.core;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import run.halo.app.extension.ConfigMap;
 import run.halo.app.extension.ReactiveExtensionClient;
-import run.halo.roaming.infra.PluginJson;
+import serenity.roaming.infra.PluginJson;
 
 @Slf4j
 @Service

@@ -4,7 +4,7 @@ metadata:
   name: plugin-theme-roaming-head-processor
 spec:
   extensionPointName: template-head-processor
-  className: run.halo.roaming.web.ThemeRoamingHeadProcessor
+  className: serenity.roaming.web.ThemeRoamingHeadProcessor
   displayName: 主题漫游前台入口
   description: 注入主题切换入口、页面过渡、链接保持与预览 SEO 信息
   icon: palette

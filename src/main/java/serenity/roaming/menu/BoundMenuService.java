@@ -1,4 +1,4 @@
-package run.halo.roaming.menu;
+package serenity.roaming.menu;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,9 +22,9 @@ import run.halo.app.core.extension.MenuItem;
 import run.halo.app.extension.ListOptions;
 import run.halo.app.extension.MetadataOperator;
 import run.halo.app.extension.ReactiveExtensionClient;
-import run.halo.roaming.infra.PluginJson;
+import serenity.roaming.infra.PluginJson;
 import run.halo.app.theme.finders.vo.ExtensionVoOperator;
-import run.halo.roaming.core.SystemThemeStateService;
+import serenity.roaming.core.SystemThemeStateService;
 
 @Service
 @RequiredArgsConstructor

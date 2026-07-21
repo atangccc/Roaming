@@ -1,11 +1,11 @@
-package run.halo.roaming.core;
+package serenity.roaming.core;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.filter.reactive.ServerWebExchangeContextFilter;
 import reactor.core.publisher.Mono;
 import run.halo.app.theme.finders.Finder;
-import run.halo.roaming.core.ThemeCatalogService.ThemeOption;
+import serenity.roaming.core.ThemeCatalogService.ThemeOption;
 
 /**
  * Read-only theme integration API exposed to Halo theme templates.

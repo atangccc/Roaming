@@ -4,7 +4,7 @@ metadata:
   name: plugin-theme-roaming-security-filter
 spec:
   extensionPointName: after-security-web-filter
-  className: run.halo.roaming.web.ThemeRoamingSecurityFilter
+  className: serenity.roaming.web.ThemeRoamingSecurityFilter
   displayName: 主题漫游请求校验
   description: 对访客的预览主题执行白名单、状态和访问范围校验
   icon: shield

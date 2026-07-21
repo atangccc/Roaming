@@ -1,4 +1,4 @@
-package run.halo.roaming;
+package serenity.roaming;
 
 import org.springframework.stereotype.Component;
 import run.halo.app.plugin.BasePlugin;

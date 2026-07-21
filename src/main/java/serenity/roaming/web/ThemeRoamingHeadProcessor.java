@@ -1,4 +1,4 @@
-package run.halo.roaming.web;
+package serenity.roaming.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Map;
@@ -18,9 +18,9 @@ import reactor.core.publisher.Mono;
 import reactor.util.context.ContextView;
 import run.halo.app.theme.dialect.TemplateHeadProcessor;
 import run.halo.app.plugin.PluginContext;
-import run.halo.roaming.infra.PluginJson;
-import run.halo.roaming.config.ThemeRoamingSettingsService;
-import run.halo.roaming.core.ThemeRoamingRequestContext;
+import serenity.roaming.infra.PluginJson;
+import serenity.roaming.config.ThemeRoamingSettingsService;
+import serenity.roaming.core.ThemeRoamingRequestContext;
 
 @Slf4j
 @Component
@@ -29,7 +29,7 @@ import run.halo.roaming.core.ThemeRoamingRequestContext;
 public class ThemeRoamingHeadProcessor implements TemplateHeadProcessor {
 
     private static final String ASSET_ROOT = "/plugins/plugin-theme-roaming/assets/static/";
-    private static final String CATALOG_ENDPOINT = "/apis/api.theme-roaming.halo.run/v1alpha1/catalog";
+    private static final String CATALOG_ENDPOINT = "/apis/roaming.serenity/v1alpha1/catalog";
     private static final ObjectMapper JSON = PluginJson.mapper();
 
     private final ThemeRoamingSettingsService settingsService;
@@ -61,7 +61,7 @@ public class ThemeRoamingHeadProcessor implements TemplateHeadProcessor {
         IModelFactory factory,
         IModel model,
         ServerWebExchange exchange,
-        run.halo.roaming.config.ThemeRoamingSettings settings
+        serenity.roaming.config.ThemeRoamingSettings settings
     ) {
         String selectedTheme = exchange.getAttributeOrDefault(
             ThemeRoamingRequestContext.SELECTED_THEME_ATTRIBUTE, "");

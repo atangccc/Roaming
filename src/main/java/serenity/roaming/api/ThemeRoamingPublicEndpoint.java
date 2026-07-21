@@ -1,4 +1,4 @@
-package run.halo.roaming.api;
+package serenity.roaming.api;
 
 import java.util.Map;
 import lombok.RequiredArgsConstructor;
@@ -12,8 +12,8 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 import run.halo.app.core.extension.endpoint.CustomEndpoint;
 import run.halo.app.extension.GroupVersion;
-import run.halo.roaming.core.SystemThemeStateService;
-import run.halo.roaming.core.ThemeCatalogService;
+import serenity.roaming.core.SystemThemeStateService;
+import serenity.roaming.core.ThemeCatalogService;
 
 @Component
 @RequiredArgsConstructor
@@ -54,6 +54,6 @@ public class ThemeRoamingPublicEndpoint implements CustomEndpoint {
 
     @Override
     public GroupVersion groupVersion() {
-        return GroupVersion.parseAPIVersion("api.theme-roaming.halo.run/v1alpha1");
+        return GroupVersion.parseAPIVersion("roaming.serenity/v1alpha1");
     }
 }

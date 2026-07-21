@@ -1,10 +1,10 @@
-package run.halo.roaming.config;
+package serenity.roaming.config;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
 import org.junit.jupiter.api.Test;
-import run.halo.roaming.config.ThemeRoamingSettings.ThemeBinding;
+import serenity.roaming.config.ThemeRoamingSettings.ThemeBinding;
 
 class ThemeRoamingSettingsTest {
 

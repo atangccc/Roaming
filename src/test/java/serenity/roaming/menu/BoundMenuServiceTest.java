@@ -1,4 +1,4 @@
-package run.halo.roaming.menu;
+package serenity.roaming.menu;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

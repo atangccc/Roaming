@@ -1,4 +1,4 @@
-package run.halo.roaming.config;
+package serenity.roaming.config;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

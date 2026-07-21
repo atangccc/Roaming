@@ -1,4 +1,4 @@
-package run.halo.roaming.config;
+package serenity.roaming.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 import run.halo.app.extension.ConfigMap;
 import run.halo.app.extension.ReactiveExtensionClient;
 import run.halo.app.plugin.PluginContext;
-import run.halo.roaming.infra.PluginJson;
+import serenity.roaming.infra.PluginJson;
 
 @Slf4j
 @Service

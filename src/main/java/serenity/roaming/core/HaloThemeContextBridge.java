@@ -1,4 +1,4 @@
-package run.halo.roaming.core;
+package serenity.roaming.core;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

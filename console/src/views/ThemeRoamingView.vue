@@ -404,7 +404,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 .tr-nav-badge{position:absolute;top:-2px;right:-3px;display:grid;min-width:16px;height:16px;place-items:center;padding:0 4px;border:2px solid #faf9fb;border-radius:999px;background:#76609d;color:#fff;font-size:8px;font-weight:750;line-height:1;box-shadow:0 2px 6px rgba(66,48,91,.18);pointer-events:none}
 .tr-binding-row{grid-template-columns:minmax(250px,.9fr) minmax(390px,1.25fr) 130px;gap:18px;min-height:106px;padding:11px 14px}
 .tr-binding-theme{display:grid;grid-template-columns:116px minmax(0,1fr);align-items:center;gap:12px;min-width:0}
-.tr-binding-cover{position:relative;display:grid;width:116px;height:72px;place-items:center;overflow:hidden;border:1px solid #e4dfea;border-radius:11px;background:linear-gradient(135deg,#efebf3,#faf9fb);color:#94899e}
+.tr-binding-cover{position:relative;display:grid;width:116px;height:72px;place-items:center;overflow:hidden;border:1px solid #d7dbdc;border-radius:11px;background:#eef1f1;color:#687174}
 .tr-binding-cover img{width:100%;height:100%;object-fit:cover}
 .tr-binding-cover>svg{width:25px;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
 .tr-binding-cover>b{position:absolute;bottom:6px;left:6px;display:grid;min-width:22px;height:18px;place-items:center;padding:0 5px;border-radius:6px;background:rgba(39,32,48,.7);color:#fff;font-size:8px;backdrop-filter:blur(5px)}
@@ -464,7 +464,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 .tr-float-nav button{color:#8a9096}.tr-float-nav button:hover{background:#eceeef;color:#34383c}.tr-float-nav button.active{background:#25282c;color:#fff;box-shadow:0 5px 12px rgba(20,23,27,.16)}.tr-float-nav button:focus-visible{outline-color:rgba(37,40,44,.3)}
 .tr-nav-badge{border-color:#f8f9f9;background:#5f656b;box-shadow:0 2px 6px rgba(20,23,27,.16)}
 .tr-binding-row{border-color:#e2e5e7;box-shadow:0 4px 14px rgba(22,25,29,.035)}.tr-binding-row:hover{border-color:#cfd3d6;box-shadow:0 7px 18px rgba(22,25,29,.055)}
-.tr-binding-cover{border-color:#dfe2e4;background:linear-gradient(135deg,#eef0f1,#fafbfb);color:#858b91}
+.tr-binding-cover{border-color:#d7dbdc;background:#eef1f1;color:#687174}
 .tr-binding-summary>strong{color:#35383c}.tr-binding-summary>p{color:#858b90}.tr-binding-summary>span{color:#9ba0a5}
 .tr-binding-link{color:#9ca1a6}.tr-binding-link i{background:#dde0e2}
 .tr-binding-actions{border-left-color:#e7e9ea}.tr-binding-actions .tr-toggle{border-color:#dfe2e4;background:#f7f8f8;color:#5c6268}.tr-binding-actions .tr-toggle:hover{border-color:#c8cccf}.tr-toggle input:checked+i{background:#373b3f}
@@ -472,15 +472,36 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 .tr-setting-icon{background:#eef0f1;color:#50565b}
 @media(max-width:760px){.tr-page-context{padding:5px 2px 1px;border-top:0}}
 
-/* Soft spectrum identity, kept subtle so content and controls stay readable. */
-.tr-shell{background:radial-gradient(circle at 10% 4%,rgba(255,210,229,.25),transparent 30%),radial-gradient(circle at 88% 8%,rgba(190,225,255,.28),transparent 31%),radial-gradient(circle at 76% 94%,rgba(213,243,224,.22),transparent 28%),#f7f8fa}
-.tr-frame{border-color:rgba(184,190,201,.55);background:rgba(255,255,255,.72)}
-.tr-brand-mark{border:1px solid rgba(91,86,108,.24);background:rgba(255,255,255,.94);color:#4c4b59;box-shadow:0 7px 18px rgba(113,103,145,.14),inset 0 0 0 3px rgba(247,246,250,.84)}
-.tr-float-nav button.active{background:linear-gradient(145deg,#f8dfea,#e5e1fb 48%,#dbeef8);color:#4c4b59;box-shadow:0 5px 14px rgba(105,99,137,.14)}
-.tr-nav-badge{background:#777487}
-.tr-toggle input:checked+i{background:linear-gradient(90deg,#df9fba,#aaa4df,#8bbfd3)}
-.tr-setting-icon{background:linear-gradient(145deg,#f8e4ed,#e7e5f8 52%,#dff1f5);color:#666274}
-.tr-binding-row:hover{border-color:#d8cfe5;box-shadow:0 9px 24px rgba(91,83,118,.075)}
+/* Editorial identity: flat surfaces, strong structure, restrained status color. */
+.tr-shell{background:#eef0f0;color:#292d30}
+.tr-frame{border-color:#cfd3d4;background:#f7f8f7;box-shadow:none;backdrop-filter:none}
+.tr-corner-tl,.tr-corner-tr,.tr-corner-bl,.tr-corner-br{border-color:#292d30}
+.tr-topbar{border-color:#d3d6d6;background:#fff;box-shadow:none}
+.tr-brand-mark{border:0;background:transparent;color:#292d30;box-shadow:none}
+.tr-brand strong,.tr-brand strong span{color:#292d30}
+.tr-page-context strong{color:#292d30}.tr-page-context span{color:#737a7d}
+.tr-open-count{border:1px solid #d8dbdc;background:#f3f4f4;color:#555c60}
+.tr-workspace{border-color:#d3d6d6;background:#fff}
+.tr-float-nav{border-color:#d4d7d8;background:#fff;box-shadow:none;backdrop-filter:none}
+.tr-float-nav button{color:#6b7275}.tr-float-nav button:hover{background:#eef0f0;color:#292d30}.tr-float-nav button.active{background:#292d30;color:#fff;box-shadow:none}
+.tr-nav-badge{border-color:#fff;background:#e87870;box-shadow:none}
+.tr-binding-row{border-color:#d8dbdc;background:#fff;box-shadow:none}.tr-binding-row:hover{border-color:#292d30;box-shadow:none}
+.tr-binding-cover{border-color:#d7dbdc;background:#eef2f2;color:#687174}
+.tr-binding-cover>b{background:#292d30;backdrop-filter:none}
+.tr-binding-summary>strong{color:#292d30}.tr-binding-summary>p{color:#747b7e}.tr-binding-summary>span{color:#899093}
+.tr-binding-link{color:#8b9295}.tr-binding-link i{background:#d8dbdc}
+.tr-binding-fields select,.tr-settings select{border-color:#cfd3d4;background-color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='m6 8 4 4 4-4' stroke='%23292d30' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");color:#292d30}
+.tr-binding-fields select:hover,.tr-settings select:hover{border-color:#858b8d}.tr-binding-fields select:focus,.tr-settings select:focus{border-color:#292d30;box-shadow:0 0 0 3px rgba(41,45,48,.1)}
+.tr-binding-actions .tr-toggle{border-color:#d1d5d6;background:#f7f8f7;color:#404649}.tr-binding-actions .tr-toggle:hover{border-color:#8f9597;background:#fff}
+.tr-toggle input:checked+i{background:#62aa9d}
+.tr-settings>label{border-color:#d8dbdc;background:#fff;box-shadow:none}
+.tr-setting-icon{border:1px solid #d7dbdc;background:#eef1f1;color:#292d30}
+.tr-readonly-field{border-color:#d4d8d9;background:#f7f8f7;color:#292d30}.tr-readonly-field>i{background:#e87870;box-shadow:none}
+.tr-add{border-color:#292d30;background:#292d30;color:#fff}.tr-add:hover{border-color:#292d30;background:#fff;color:#292d30;transform:none}
+.tr-icon-button{border-color:#d3d6d7;color:#555c5f}.tr-icon-button:hover{border-color:#292d30;background:#fff;color:#292d30}
+.tr-section-head small{color:#687174}.tr-section-head h1{color:#292d30}.tr-section-head p{color:#747b7e}
+.tr-side-nav button:hover{background:#eef0f0;color:#292d30}.tr-side-nav button.active{border-color:#292d30;background:#fff;color:#292d30;box-shadow:none}
+.tr-side-nav__icon,.tr-side-nav button.active .tr-side-nav__icon{background:#eef1f1;color:#292d30}
 .tr-binding-row{min-height:142px;padding:18px 20px}
 .tr-binding-theme{grid-template-columns:158px minmax(0,1fr);gap:17px}
 .tr-binding-cover{width:158px;height:104px;padding:5px;background:#fafbfc}
@@ -488,7 +509,7 @@ function clone<T>(value: T): T { return JSON.parse(JSON.stringify(value ?? {}));
 .tr-setting-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
 .tr-binding-cover>b{bottom:10px;left:10px}
 .tr-readonly-field{display:flex;height:44px;align-items:center;gap:10px;padding:0 14px;border:1px solid #dfe2e4;border-radius:12px;background:#f8f9f9;color:#34383c}
-.tr-readonly-field>i{width:7px;height:7px;flex:none;border-radius:50%;background:linear-gradient(145deg,#dc9db8,#98bdd2);box-shadow:0 0 0 3px rgba(169,166,203,.12)}
+.tr-readonly-field>i{width:7px;height:7px;flex:none;border-radius:50%;background:#e87870;box-shadow:none}
 .tr-readonly-field>strong{overflow:hidden;font-size:12px;font-weight:650;text-overflow:ellipsis;white-space:nowrap}
 .tr-binding-actions{padding-left:12px}
 @media(max-width:820px){.tr-binding-theme{grid-template-columns:128px minmax(0,1fr)}.tr-binding-cover{width:128px;height:92px}}

@@ -317,7 +317,7 @@
     button.setAttribute("aria-expanded", String(state.open));
     button.setAttribute("aria-label", "切换站点主题");
     button.title = currentThemeLabel();
-    button.innerHTML = paletteIcon();
+    button.innerHTML = roamingIcon();
     button.addEventListener("click", () => {
       if (state.open) setOpen(false);
       else openPanel();
@@ -552,8 +552,8 @@
     return node;
   }
 
-  function paletteIcon() {
-    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 1 0 0 17.6h1.25a1.65 1.65 0 0 0 0-3.3h-.7a1.4 1.4 0 0 1 0-2.8h1.95a6.7 6.7 0 0 0 0-13.4H12Z"/><circle cx="7.7" cy="10.4" r="1"/><circle cx="10" cy="6.9" r="1"/><circle cx="14.2" cy="6.8" r="1"/><circle cx="17" cy="10" r="1"/></svg>';
+  function roamingIcon() {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 14.5V6.8A2.8 2.8 0 0 1 7.8 4h7.7"/><rect x="8" y="7" width="11" height="10" rx="2.5"/><path d="M10.8 10.5h5.4l-1.5-1.4M16.2 13.5h-5.4l1.5 1.4"/></svg>';
   }
   function checkIcon() { return '<svg viewBox="0 0 20 20"><path d="m5.2 10.2 3.1 3.1 6.5-6.7"/></svg>'; }
   function infoIcon() { return '<svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="7"/><path d="M10 9v4m0-7.2v.1"/></svg>'; }
